@@ -1,0 +1,65 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card-wrapper {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.svg-triangle {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  transition: 0.3s all ease;
+}
+
+.svg-triangle polygon {
+  fill: #0d47a1;
+}
+
+.svg-triangle:hover path {
+  fill: #0d47a1;
+}
+
+.svg-triangle polygon,
+.svg-triangle path {
+  -webkit-transition: 0.1s all ease;
+  transition: 0.1s all ease;
+}
+
+.svg-triangle:hover polygon {
+  fill: white;
+}
+
+.svgLink {
+  background: lightgray;
+  text-align: center;
+  visibility: hidden;
+  width: 200px;
+  padding: 30px 0;
+  -webkit-transition: all 0.3s;
+  /* Safari */
+  transition: all 0.3s;
+}
+
+.svgLink a {
+  font-size: 1.8em;
+  color: #0d47a1;
+  text-decoration: none;
+}
+.card-wrapper:hover .svgLink {
+  width: 450px;
+}
+
+.spacer {
+  width: 100%;
+  height: 50px;
+}
